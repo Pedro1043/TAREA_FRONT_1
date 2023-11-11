@@ -1,0 +1,120 @@
+body{
+    background-color:rgb(15, 155, 224);
+}
+
+#Logo{
+    border-radius: 50%;
+}
+
+.header__button{
+    border-radius: 20%;
+    background-color: orange;
+}
+
+.container{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(6,1fr);
+    gap: 10px;
+    grid-template-areas: 
+    "Header Header Header"
+    "Aside Section1 Section1"
+    "Aside Section2 Section2"
+    "Aside Section3 Section3"
+    "Aside Section4 Section4" 
+    "Footer Footer Footer";
+}
+
+.Header{
+    background-color: turquoise;
+    grid-area: Header;
+    border-radius: 20px;
+    padding: 20px;
+    margin: 8px;
+    display: flex;
+    position: sticky;
+    top: 0%;
+    justify-content: space-between;
+    align-items: center;
+}
+.Aside{
+    background-color: yellow;
+    grid-area: Aside;
+    border-radius: 20px;
+    padding: 20px;
+    margin: 8px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.Section1{
+    background-color: pink;
+    grid-area: Section1;
+    border-radius: 20px;
+    padding: 20px;
+    margin: 8px;
+    display: flex;
+    justify-content: center;
+}
+
+.Section2{
+    background-color: pink;
+    grid-area: Section2;
+    border-radius: 20px;
+    padding: 20px;
+    margin: 8px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.Section3{
+    background-color: pink;
+    grid-area: Section3;
+    border-radius: 20px;
+    padding: 20px;
+    margin: 8px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.Section4{
+    background-color: pink;
+    grid-area: Section4;
+    border-radius: 20px;
+    padding: 20px;
+    margin: 8px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.Footer{
+    background-color: rgb(139, 13, 139);
+    grid-area: Footer;
+    border-radius: 20px;
+    padding: 20px;
+    margin: 8px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.footer__section{
+    background-color: rgb(15, 175, 15);
+    border-radius: 20px;
+    padding: 20px;
+    margin: 8px;
+}
+
+#FloatButton{
+    background-color: aqua;
+    border-radius: 50%;
+    position: absolute;
+    top: 112%;
+    left: 93%;
+    width: 90px;
+    height: 90px;
+}
